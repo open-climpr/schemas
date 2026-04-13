@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/climpr/climpr-schemas/main/schemas/v1.0.0/lz-management/delete-files.json#",
+  "$id": "https://raw.githubusercontent.com/open-climpr/schemas/main/schemas/v1.0.0/lz-management/delete-files.json#",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Configuration file for the 'update-landing-zone-repository' action.",
   "description": "The schema for the configuration file for the 'update-landing-zone-repository' action.",

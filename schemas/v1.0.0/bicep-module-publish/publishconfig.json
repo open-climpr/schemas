@@ -1,8 +1,8 @@
 {
-  "$id": "https://raw.githubusercontent.com/climpr/climpr-schemas/main/schemas/v1.0.0/bicep-module-publish/publishconfig.json#",
+  "$id": "https://raw.githubusercontent.com/open-climpr/schemas/main/schemas/v1.0.0/bicep-module-publish/publishconfig.json#",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Configuration options for Bicep module publishing action",
-  "description": "The schema for the publishconfig file used for the Bicep Module publish action in Climpr",
+  "description": "The schema for the publishconfig file used for the Bicep Module publish action in open-climpr",
   "type": "object",
   "required": [
     "bicepRegistryFqdn"

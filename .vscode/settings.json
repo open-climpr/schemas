@@ -21,64 +21,36 @@
     "climprconfig.json": "jsonc",
     "**/deploymentconfig.json": "jsonc",
     "**/publishconfig.json": "jsonc",
-    "**/policy-management/**/*.json": "jsonc",
-    "**/lz-management/**/metadata.json": "jsonc",
-    "**/lz-management/**/*.existingVnetIds.json": "jsonc",
+    "**/lz-management/**/metadata.json": "jsonc"
   },
   "json.schemas": [
     {
       "fileMatch": [
-        "climprconfig.json"
+        "climprconfig.json",
+        "climprconfig.jsonc"
       ],
-      "url": "https://raw.githubusercontent.com/climpr/climpr-schemas/main/schemas/v1.0.0/climprconfig.json#"
+      "url": "https://raw.githubusercontent.com/open-climpr/schemas/main/schemas/v1.0.0/climprconfig.json#"
     },
     {
       "fileMatch": [
-        "**/deploymentconfig.json"
+        "**/deploymentconfig.json",
+        "**/deploymentconfig.jsonc"
       ],
-      "url": "https://raw.githubusercontent.com/climpr/climpr-schemas/main/schemas/v1.0.0/bicep-deployment/deploymentconfig.json#"
+      "url": "https://raw.githubusercontent.com/open-climpr/schemas/main/schemas/v1.0.0/bicep-deployment/deploymentconfig.json#"
     },
     {
       "fileMatch": [
-        "**/publishconfig.json"
+        "**/publishconfig.json",
+        "**/publishconfig.jsonc"
       ],
-      "url": "https://raw.githubusercontent.com/climpr/climpr-schemas/main/schemas/v1.0.0/bicep-module-publish/publishconfig.json#"
+      "url": "https://raw.githubusercontent.com/open-climpr/schemas/main/schemas/v1.0.0/bicep-module-publish/publishconfig.json#"
     },
     {
       "fileMatch": [
-        "**/lz-management/**/metadata.json"
+        "**/lz-management/**/metadata.json",
+        "**/lz-management/**/metadata.jsonc"
       ],
-      "url": "https://raw.githubusercontent.com/climpr/climpr-schemas/main/schemas/v1.0.0/lz-management/metadata.json#"
-    },
-    {
-      "fileMatch": [
-        "**/lz-management/**/*.existingVnetIds.json"
-      ],
-      "url": "https://raw.githubusercontent.com/climpr/climpr-schemas/main/schemas/v1.0.0/lz-management/existingvnetids.json#"
-    },
-    {
-      "fileMatch": [
-        "**/policy-management/initiatives/*/definitions/*.json"
-      ],
-      "url": "https://raw.githubusercontent.com/climpr/climpr-schemas/main/schemas/v1.0.0/policy-management/policysetdefinition.json#"
-    },
-    {
-      "fileMatch": [
-        "**/policy-management/policies/*/definitions/*.json"
-      ],
-      "url": "https://raw.githubusercontent.com/climpr/climpr-schemas/main/schemas/v1.0.0/policy-management/policydefinition.json#"
-    },
-    {
-      "fileMatch": [
-        "**/policy-management/**/assignments/*.json"
-      ],
-      "url": "https://raw.githubusercontent.com/climpr/climpr-schemas/main/schemas/v1.0.0/policy-management/policyassignment.json#"
-    },
-    {
-      "fileMatch": [
-        "**/policy-management/**/exemptions/*.json"
-      ],
-      "url": "https://raw.githubusercontent.com/climpr/climpr-schemas/main/schemas/v1.0.0/policy-management/policyexemption.json#"
+      "url": "https://raw.githubusercontent.com/open-climpr/schemas/main/schemas/v1.0.0/lz-management/metadata.json#"
     }
   ]
 }

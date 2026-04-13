@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "title": "Landing Zone definition file schema",
-  "description": "The configuration file used to define a Landing Zone in Climpr",
+  "description": "The configuration file used to define a Landing Zone in open-climpr",
   "required": [
     "organization",
     "repoName"

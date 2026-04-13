@@ -1,7 +1,7 @@
 {
   "$id": "climprconfig.lzmanagement.json#",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Climpr Landing Zone Management Configuration schema",
+  "title": "open-climpr Landing Zone Management Configuration schema",
   "description": "All properties related to the landing zone management feature configuration.",
   "type": "object",
   "required": [
@@ -20,7 +20,7 @@
     },
     "rootManagementGroupId": {
       "type": "string",
-      "description": "The top level Management Group Id for the Climpr deployment."
+      "description": "The top level Management Group Id for the open-climpr deployment."
     },
     "decommissionedManagementGroupId": {
       "type": "string",
@@ -107,7 +107,7 @@
             "descriptionSuffix": {
               "type": "string",
               "description": "Suffix for calculating the default team name.",
-              "default": ". Automatically created by CLIMPR Framework."
+              "default": ". Automatically created by open-climpr Framework."
             },
             "descriptionIncludeLzName": {
               "type": "boolean",

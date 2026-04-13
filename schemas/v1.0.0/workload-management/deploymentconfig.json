@@ -1,8 +1,8 @@
 {
-  "$id": "https://raw.githubusercontent.com/climpr/climpr-schemas/main/schemas/v1.0.0/workload-management/deploymentconfig.json#",
+  "$id": "https://raw.githubusercontent.com/open-climpr/schemas/main/schemas/v1.0.0/workload-management/deploymentconfig.json#",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Deployment configuration for workload deployments",
-  "description": "The schema for the deployment configuration file used for Climpr workloads",
+  "description": "The schema for the deployment configuration file used for open-climpr workloads",
   "type": "object",
   "required": [],
   "additionalProperties": false,

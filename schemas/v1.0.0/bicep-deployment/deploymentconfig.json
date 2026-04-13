@@ -1,7 +1,7 @@
 {
-  "$id": "https://raw.githubusercontent.com/climpr/climpr-schemas/main/schemas/v1.0.0/bicep-deployment/deploymentconfig.json#",
+  "$id": "https://raw.githubusercontent.com/open-climpr/schemas/main/schemas/v1.0.0/bicep-deployment/deploymentconfig.json#",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Deployment configuration for Climpr Bicep deployments",
+  "title": "Deployment configuration for open-climpr Bicep deployments",
   "properties": {
     "type": {
       "$ref": "#/$defs/common/type"

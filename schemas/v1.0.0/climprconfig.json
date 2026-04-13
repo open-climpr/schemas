@@ -1,8 +1,8 @@
 {
-  "$id": "https://raw.githubusercontent.com/climpr/climpr-schemas/main/schemas/v1.0.0/climprconfig.json#",
+  "$id": "https://raw.githubusercontent.com/open-climpr/schemas/main/schemas/v1.0.0/climprconfig.json#",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Climpr configuration file",
-  "description": "The configuration file for configuring Climpr",
+  "title": "open-climpr configuration file",
+  "description": "The configuration file for configuring open-climpr",
   "type": "object",
   "required": [],
   "additionalProperties": false,
@@ -13,9 +13,6 @@
     },
     "lzManagement": {
       "$ref": "./lz-management/climprconfig.lzmanagement.json#"
-    },
-    "policyManagement": {
-      "$ref": "./policy-management/climprconfig.policymanagement.json#"
     },
     "workloadManagement": {
       "$ref": "./workload-management/climprconfig.workloadmanagement.json#"

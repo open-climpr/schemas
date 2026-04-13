@@ -1,1 +1,1 @@
-# climpr-schemas
+# schemas
