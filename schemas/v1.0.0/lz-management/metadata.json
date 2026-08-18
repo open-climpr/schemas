@@ -26,6 +26,11 @@
     "repoDescription": {
       "type": "string"
     },
+    "defaultBranch": {
+      "type": "string",
+      "description": "The default branch of the Landing Zone repository. Branch protection and the CODEOWNERS file are applied to this branch.",
+      "default": "main"
+    },
     "repoTemplate": {
       "type": "string"
     },
@@ -158,6 +163,25 @@
                     "$ref": "#/$defs/azure/parentManagementGroupId"
                   }
                 }
+              },
+              {
+                "required": [
+                  "archetype",
+                  "deploymentSubscriptionId"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "decommissioned": {
+                    "$ref": "#/$defs/azure/decommissioned"
+                  },
+                  "archetype": {
+                    "const": "no-lz",
+                    "description": "The 'no-lz' archetype describes a Landing Zone that does not own a subscription. The archetype is deployed into the existing subscription named by 'deploymentSubscriptionId'."
+                  },
+                  "deploymentSubscriptionId": {
+                    "$ref": "#/$defs/azure/deploymentSubscriptionId"
+                  }
+                }
               }
             ]
           }
@@ -174,6 +198,11 @@
       "archetype": {
         "type": "string",
         "description": "The archetype for the Landing Zone. Typically 'corp' or 'online'."
+      },
+      "deploymentSubscriptionId": {
+        "type": "string",
+        "description": "The subscription the archetype is deployed into, for Landing Zones that do not own one ('no-lz'). Must be a GUID.",
+        "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89ABab][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
       },
       "subscriptionName": {
         "type": "string",
