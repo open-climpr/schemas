@@ -13,6 +13,11 @@
   ],
   "additionalProperties": false,
   "properties": {
+    "useRepositoryId": {
+      "type": "boolean",
+      "default": false,
+      "description": "Identify repositories by the id in metadata.json and record missing IDs automatically. With an ID present, changing repoName renames the existing repository."
+    },
     "defaultLocation": {
       "type": "string",
       "description": "The default location for for all deployment functions.",
