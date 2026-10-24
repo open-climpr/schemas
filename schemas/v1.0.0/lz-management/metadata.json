@@ -28,7 +28,7 @@
     "repoName": {
       "type": "string"
     },
-    "id": {
+    "repoId": {
       "type": "integer",
       "minimum": 1,
       "description": "The numeric GitHub repository ID. Used as the repository anchor when lzManagement.useRepositoryId is enabled."
