@@ -23,7 +23,7 @@
     "organizationId": {
       "type": "integer",
       "minimum": 1,
-      "description": "The numeric GitHub owner ID used to build an immutable OIDC subject. Recorded automatically when lzManagement.useRepositoryId is enabled."
+      "description": "The numeric GitHub owner ID used to build an immutable OIDC subject. Recorded automatically when lzManagement.backfillRepositoryIds is enabled."
     },
     "repoName": {
       "type": "string"
@@ -31,7 +31,7 @@
     "repoId": {
       "type": "integer",
       "minimum": 1,
-      "description": "The numeric GitHub repository ID. Used as the repository anchor when lzManagement.useRepositoryId is enabled."
+      "description": "The numeric GitHub repository ID. Used as the repository anchor whenever present."
     },
     "useImmutableOidcSubject": {
       "type": "boolean",

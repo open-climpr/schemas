@@ -13,10 +13,10 @@
   ],
   "additionalProperties": false,
   "properties": {
-    "useRepositoryId": {
+    "backfillRepositoryIds": {
       "type": "boolean",
       "default": false,
-      "description": "Identify repositories by the repoId in metadata.json and record missing IDs automatically. With an ID present, changing repoName renames the existing repository."
+      "description": "Record repoId and organizationId in metadata.json and commit and push the changes. Repository matching always uses repoId when present, independently of this setting."
     },
     "defaultLocation": {
       "type": "string",
