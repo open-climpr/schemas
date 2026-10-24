@@ -13,6 +13,9 @@
   ],
   "additionalProperties": false,
   "properties": {
+    "oidc": {
+      "$ref": "github-api.json#/$defs/oidc"
+    },
     "backfillRepositoryIds": {
       "type": "boolean",
       "default": false,

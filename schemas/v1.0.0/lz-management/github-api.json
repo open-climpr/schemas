@@ -6,6 +6,30 @@
   "type": "object",
   "additionalProperties": false,
   "$defs": {
+    "oidc": {
+      "type": "object",
+      "description": "GitHub OIDC subject customization settings.",
+      "additionalProperties": false,
+      "properties": {
+        "useDefault": {
+          "type": "boolean",
+          "description": "Use GitHub's default subject template. When true, includeClaimKeys is ignored by GitHub."
+        },
+        "includeClaimKeys": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_]+$"
+          },
+          "description": "Claims to include in the custom subject template."
+        },
+        "useImmutableSubject": {
+          "type": "boolean",
+          "description": "Use immutable OIDC subjects containing owner and repository IDs. If omitted, the action leaves this API setting untouched."
+        }
+      }
+    },
     "repoPermissions": {
       "type": "string",
       "description": "GitHub repository permissions.",

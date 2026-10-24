@@ -33,10 +33,9 @@
       "minimum": 1,
       "description": "The numeric GitHub repository ID. Used as the repository anchor whenever present."
     },
-    "useImmutableOidcSubject": {
-      "type": "boolean",
-      "default": false,
-      "description": "Opt the repository into immutable OIDC subjects containing owner and repository IDs. Omitted or false leaves the format unchanged; GitHub may already enforce immutable subjects for new or renamed repositories."
+    "oidc": {
+      "$ref": "github-api.json#/$defs/oidc",
+      "description": "Repository OIDC settings. Supplied properties override lzManagement.oidc in climprconfig.json."
     },
     "repoDescription": {
       "type": "string"
