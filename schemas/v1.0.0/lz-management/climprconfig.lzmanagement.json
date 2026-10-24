@@ -13,6 +13,14 @@
   ],
   "additionalProperties": false,
   "properties": {
+    "oidc": {
+      "$ref": "github-api.json#/$defs/oidc"
+    },
+    "backfillRepositoryIds": {
+      "type": "boolean",
+      "default": false,
+      "description": "Record repoId and organizationId in metadata.json and commit and push the changes. Repository matching always uses repoId when present, independently of this setting."
+    },
     "defaultLocation": {
       "type": "string",
       "description": "The default location for for all deployment functions.",

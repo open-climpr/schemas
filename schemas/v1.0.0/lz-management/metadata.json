@@ -20,8 +20,22 @@
     "organization": {
       "type": "string"
     },
+    "organizationId": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "The numeric GitHub owner ID used to build an immutable OIDC subject. Recorded automatically when lzManagement.backfillRepositoryIds is enabled."
+    },
     "repoName": {
       "type": "string"
+    },
+    "repoId": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "The numeric GitHub repository ID. Used as the repository anchor whenever present."
+    },
+    "oidc": {
+      "$ref": "github-api.json#/$defs/oidc",
+      "description": "Repository OIDC settings. Supplied properties override lzManagement.oidc in climprconfig.json."
     },
     "repoDescription": {
       "type": "string"
